@@ -1,0 +1,15 @@
+<div class="project-container">
+    <h2>Project List</h2>
+  
+    <div class="project-card" *ngFor="let project of projects">
+      <p class="project-name">{{ project.name }}</p>
+      
+      <div class="button-group" *ngIf="isAdmin">
+        <button class="edit-button" (click)="editProject(project)">Edit</button>
+        <button class="delete-button" (click)="deleteProject(project._id)">Delete</button>
+      </div>
+    </div>
+  
+    <button class="add-project-button" *ngIf="isAdmin" (click)="navigateToForm()">➕ Add Project</button>
+  </div>
+  

@@ -1,0 +1,12 @@
+<div class="login-container">
+    <div class="login-card">
+      <h2>Login</h2>
+      <label>Select Role:</label>
+      <select [(ngModel)]="role" class="role-select">
+        <option value="admin">Admin</option>
+        <option value="viewer">Viewer</option>
+      </select>
+      <button (click)="login()" class="login-button">Login</button>
+    </div>
+  </div>
+  

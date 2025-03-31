@@ -63,6 +63,9 @@
             },
             "development": {
               "buildTarget": "Project-management:build:development"
+            },
+            "options": {
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -92,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6515c84a-85d5-47b3-a307-2d1944cbf494"
   }
 }
